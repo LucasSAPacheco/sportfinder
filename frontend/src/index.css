@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #fafafa;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes pulse-ring {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-200 w-full tracking-wide;
+  }
+  .btn-gold {
+    @apply bg-gold text-white font-semibold py-3 px-6 rounded-lg hover:bg-gold-dark transition-colors duration-200 w-full tracking-wide;
+  }
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors duration-200 w-full;
+  }
+  .input-field {
+    @apply w-full bg-gray-100 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder-gray-400;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4;
+  }
+}

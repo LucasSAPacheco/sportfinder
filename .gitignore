@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+*.db
+venv/
+.venv/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Tarefas
+Atividades_Extensionistas_Manual.pdf
+RETIFICADO_Atividades Extensionistas - Modelo de Proposta de tema e Trabalho Final.pdf
